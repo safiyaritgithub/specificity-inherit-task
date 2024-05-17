@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS specificity-Inheritance</title>
+  <style>
+    .parent {
+  color: blue;
+}
+
+.child {
+  font-size: inherit; 
+}
+
+  </style>
+</head>
+<body>
+  <h1>CSS SELECTORS SPECIFICITY</h1>
+  <p>.container .box: specificity = (0, 2, 0) → 2 class selectors</p>
+<p>#main-content .box: specificity = (1, 1, 0) → 1 ID selector, 1 class selector</p>
+<p>div.box: specificity = (0, 1, 1) → 1 class selector, 1 element selector</p>
+
+<h1>Inheritance in CSS:</h1>
+<p>CSS properties can be inherited by child elements from their parent elements. This means that if a parent element has a certain style applied to it, its child elements will inherit that style unless explicitly overridden.</p>
+
+<div class="parent">
+  Parent Element
+  <div class="child">
+    Child Element
+  </div>
+</div>
+
+</body>
+</html>
